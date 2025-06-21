@@ -99,5 +99,7 @@ configurations.all {
     resolutionStrategy {
         // Force a specific version of Guava to avoid conflicts
         force("com.google.guava:guava:32.1.3-android")
+        // Exclude listenablefuture from all dependencies
+       exclude(group = "com.google.guava", module = "listenablefuture")
     }
 }
