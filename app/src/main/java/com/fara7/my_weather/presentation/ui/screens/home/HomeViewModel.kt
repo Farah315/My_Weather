@@ -21,7 +21,7 @@ class HomeViewModel(
             getWeather(lat, lng)
         }
     }
-
+//
     private suspend fun getWeather(lat: Double, lng: Double) {
         val result = weatherRepository.getWeather(lat, lng)
         result.fold(
